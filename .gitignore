@@ -1,0 +1,28 @@
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# Compiled class files
+/target/
+/bin/
+/build/
+
+# IntelliJ IDEA files
+/.idea/
+*.iml
+*.iws
+
+# Log files
+*.log
+
+# Package files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Other ignored files
+.DS_Store
