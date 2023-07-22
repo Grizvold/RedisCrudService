@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: {{ .Values.app.name }}
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
     - port: 80
       targetPort: {{ .Values.app.port }}

@@ -11,8 +11,10 @@ public class RedisService {
     private Jedis jedis;
 
     public RedisService() {
+        String redisHost = System.getenv("REDIS_HOST");
+        int redisPort = Integer.parseInt(System.getenv("REDIS_PORT"));
         try {
-            this.jedis = new Jedis("localhost", 6379);
+            this.jedis = new Jedis(redisHost, redisPort);
         } catch (Exception e) {
             logger.error("Error connecting to Redis: " + e.getMessage());
             System.exit(1);

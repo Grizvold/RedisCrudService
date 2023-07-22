@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: {{ .Values.app.name }}
-          image: {{ .Values.app.image }}
+          image: {{ .Values.app.image.repository }}:{{ .Values.app.image.tag }}
           ports:
             - containerPort: {{ .Values.app.port }}
           env:
@@ -25,3 +25,5 @@ spec:
               value: {{ .Values.redis.service.name }}
             - name: REDIS_PORT
               value: "{{ .Values.redis.service.port }}"
+            - name: PORT
+              value: "{{ .Values.app.port }}"
