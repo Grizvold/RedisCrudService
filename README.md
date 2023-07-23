@@ -10,7 +10,7 @@ This project is a simple Java-based REST API microservice that performs CRUD ope
 - Build Tool: Maven
 - Containerization: Docker
 - Orchestration: Kubernetes
-
+ 
 ## Requirements
 - Java 17
 - Maven
