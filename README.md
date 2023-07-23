@@ -1,7 +1,7 @@
 # Redis CRUD REST API Service
 
 ## Introduction
-This project is a simple Java-based REST API microservice that performs CRUD operations on a Redis database. It has been containerized with Docker and is orchestrated via Kubernetes. It was designed and created as part of an interview process for Shield.
+This project is a simple Java-based REST API microservice that performs CRUD operations on a Redis database. It has been containerized with Docker and is orchestrated via Kubernetes.
 
 ## Tech Stack
 - Language: Java 17
